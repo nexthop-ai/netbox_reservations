@@ -101,7 +101,7 @@ class Claim(NetBoxModel, TreeNode):
         related_name="children",
     )
     tag = models.ForeignKey(
-        to='extras.Tag',
+        to='netbox.Tag',
         on_delete=models.PROTECT,
         related_name='claims',
     )
@@ -120,7 +120,7 @@ class Claim(NetBoxModel, TreeNode):
 
     prerequisite_models = (
         'netbox_reservations.Reservation',
-        'extras.Tag'
+        'netbox.Tag'
     )
 
     def clean(self):

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from extras.api.serializers import NestedTagSerializer
+from netbox.api.serializers import NestedTagSerializer
 from tenancy.api.serializers import NestedTenantSerializer, NestedContactSerializer
 from netbox.api.serializers import NetBoxModelSerializer, WritableNestedSerializer
 from ..models import Reservation, Claim

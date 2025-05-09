@@ -1,6 +1,6 @@
 from django.db.models import Q
 
-from extras.models import Tag
+from netbox.models import Tag
 from netbox.filtersets import NetBoxModelFilterSet
 from .models import Claim, Reservation
 from django_filters import DateTimeFilter, ModelMultipleChoiceFilter

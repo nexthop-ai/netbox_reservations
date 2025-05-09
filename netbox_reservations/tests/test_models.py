@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 from django.test import TestCase
 from django.utils import timezone
 
-from extras.models import Tag
+from netbox.models import Tag
 from netbox_reservations.models import Reservation, RestrictionChoices, Claim
 from tenancy.models import Contact, Tenant
 

@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('tenancy', '0009_standardize_description_comments'),
-        ('extras', '0084_staging'),
+        ('netbox., '0084_staging'),
     ]
 
     operations = [
@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
                 ('start_date', models.DateField()),
                 ('end_date', models.DateField()),
                 ('contact', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='reservations', to='tenancy.contact')),
-                ('tags', taggit.managers.TaggableManager(through='extras.TaggedItem', to='extras.Tag')),
+                ('tags', taggit.managers.TaggableManager(through='netbox.TaggedItem', to='netbox.Tag')),
                 ('tenant', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='reservations', to='tenancy.tenant')),
             ],
             options={
@@ -45,8 +45,8 @@ class Migration(migrations.Migration):
                 ('restriction', models.CharField(max_length=20)),
                 ('description', models.CharField(blank=True, max_length=500)),
                 ('reservation', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='claims', to='netbox_reservations.reservation')),
-                ('tag', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='claims', to='extras.tag')),
-                ('tags', taggit.managers.TaggableManager(through='extras.TaggedItem', to='extras.Tag')),
+                ('tag', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='claims', to='netbox.tag')),
+                ('tags', taggit.managers.TaggableManager(through='netbox.TaggedItem', to='netbox.Tag')),
             ],
             options={
                 'ordering': ('reservation', 'tag'),

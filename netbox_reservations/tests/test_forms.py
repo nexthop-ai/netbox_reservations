@@ -4,7 +4,7 @@ from django.db.models.fields import related_descriptors
 from django.db.models.fields.related_descriptors import ForwardManyToOneDescriptor
 from django.test import TestCase
 
-from extras.models import Tag
+from netbox.models import Tag
 from netbox_reservations.forms import ReservationForm, ClaimForm
 from netbox_reservations.models import Reservation, RestrictionChoices
 from tenancy.models import Contact, Tenant

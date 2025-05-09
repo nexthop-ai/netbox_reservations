@@ -3,7 +3,7 @@ import django_tables2 as tables
 from dcim.models import Device
 from netbox.tables import NetBoxTable, ChoiceFieldColumn, ColoredLabelColumn, columns
 from .models import Reservation, Claim
-from extras.models import Tag
+from netbox.models import Tag
 
 
 class CustomColoredMPTTColumn(tables.TemplateColumn):

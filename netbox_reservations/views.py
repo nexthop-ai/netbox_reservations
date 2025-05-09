@@ -10,7 +10,7 @@ from tree_queries.query import TreeQuerySet
 
 from dcim.models import Device
 from netbox.views import generic
-from extras.models import Tag
+from netbox.models import Tag
 from . import filtersets, forms, models, tables
 from .models import Reservation, ClaimQuerySet
 from .tables import ReservationTable

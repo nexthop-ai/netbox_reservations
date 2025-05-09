@@ -1,7 +1,7 @@
 from django import forms
 
 from tenancy.models import Contact, Tenant
-from extras.models import Tag
+from netbox.models import Tag
 from netbox.forms import NetBoxModelForm, NetBoxModelFilterSetForm
 from utilities.forms import DynamicModelMultipleChoiceField
 from utilities.forms.fields import CommentField, DynamicModelChoiceField

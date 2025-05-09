@@ -1,6 +1,6 @@
 from django.core.exceptions import ValidationError
 from tree_queries.query import TreeQuerySet
-from extras.validators import CustomValidator
+from netbox.validators import CustomValidator
 import netbox_reservations.models as models
 
 TIME_FORMAT = '%Y-%m-%d %H:%M'
