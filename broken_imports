@@ -1,0 +1,19 @@
+ File "/opt/netbox-4.2.7/venv/lib64/python3.11/site-packages/netbox_reservations-1.2.1-py3.11.egg/netbox_reservations/api/serializers.py", line 4, in <module>
+    from tenancy.api.serializers import NestedTenantSerializer, NestedContactSerializer
+ImportError: cannot import name 'NestedTenantSerializer' from 'tenancy.api.serializers' (/opt/netbox-4.2.7/netbox/tenancy/api/serializers.py)
+
+  File "/opt/netbox-4.2.7/venv/lib64/python3.11/site-packages/netbox_reservations-1.2.1-py3.11.egg/netbox_reservations/api/serializers.py", line 3, in <module>
+    from extras.api.serializers import NestedTagSerializer
+ImportError: cannot import name 'NestedTagSerializer' from 'extras.api.serializers' (/opt/netbox-4.2.7/netbox/extras/api/serializers.py)
+
+  File "/opt/netbox-4.2.7/venv/lib64/python3.11/site-packages/netbox_reservations-1.2.1-py3.11.egg/netbox_reservations/forms.py", line 6, in <module>
+    from utilities.forms.fields import MultipleChoiceField, CommentField, DynamicModelChoiceField
+ImportError: cannot import name 'MultipleChoiceField' from 'utilities.forms.fields' (/opt/netbox-4.2.7/netbox/utilities/forms/fields/__init__.py)
+
+  File "/opt/netbox-4.2.7/venv/lib64/python3.11/site-packages/netbox_reservations-1.2.1-py3.11.egg/netbox_reservations/forms.py", line 6, in <module>
+    from utilities.forms import DynamicModelMultipleChoiceField, MultipleChoiceField
+ImportError: cannot import name 'DynamicModelMultipleChoiceField' from 'utilities.forms' (/opt/netbox-4.2.7/netbox/utilities/forms/__init__.py)
+
+  File "/opt/netbox-4.2.7/venv/lib64/python3.11/site-packages/netbox_reservations-1.2.1-py3.11.egg/netbox_reservations/navigation.py", line 4, in <module>
+    from utilities.choices import ButtonColorChoices
+ImportError: cannot import name 'ButtonColorChoices' from 'utilities.choices' (/opt/netbox-4.2.7/netbox/utilities/choices.py)
